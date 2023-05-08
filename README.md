@@ -21,5 +21,8 @@ The example of refinery is already set up, but let me briefly explain the steps 
 2. activate it (e.g. `conda activate docs_chatbot`)
 3. install dependencies `pip install -r requirements.txt`
 
+### Restart
+Depending on your system, the new environment variables are not immediately available. You could use a jupyer notebook to test if the variables are set. If not, for me a restart of my system helped (win11).
+
 ## Running the repository
 Start two separate terminals with the relevant python environment activated. Type `uvicorn server:app` into the first one and `python demo.py` into the second (in that order). You should now have access to the gradio demo at `http://127.0.0.1:7860/` or under whatever route your terminal tells you. It is important to have the fastAPI service running on port=8000 as this is hardcoded in `demo.py`.
