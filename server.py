@@ -48,7 +48,7 @@ async def get_answer(question: str):
     context = get_similar_records(question)
     print("Full context:\n", context)
     if len(context) > 0:
-        my_context = "\n".join(context)
+        my_context = "\n".join(context).strip()[:5000]
         openai_response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
@@ -61,7 +61,6 @@ async def get_answer(question: str):
                     "content": f"question: {question}\n\ncontext:{my_context}",
                 },
             ],
-            max_tokens=2024,
             temperature=0,
         )
         answer = openai_response["choices"][0]["message"]["content"]
