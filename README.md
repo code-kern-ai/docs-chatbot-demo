@@ -1,6 +1,11 @@
 # Chat with your documentation usecase
 This repository explores a very basic pipeline on how to chat with your own documentation with the example of refinery.
 
+**Watch the full tutorial on YouTube (under 20min):**
+
+[![Watch it on YouTube](https://img.youtube.com/vi/URYPsgVGDRc/0.jpg)]([https://www.youtube.com/watch?v=URYPsgVGDRc])
+
+
 ## Setup
 The example in refinery is already set up, but let me briefly explain the steps for other projects that follow this approach.
 
